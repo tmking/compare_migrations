@@ -1,0 +1,3 @@
+#compdef compare_migrations
+
+_values 'ssh hosts' $(echo $hosts)

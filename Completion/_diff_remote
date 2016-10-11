@@ -1,0 +1,12 @@
+#compdef diff-remote
+
+case ${#words} in
+  2)
+    _values 'ssh hosts' $(echo $hosts)
+    ;;
+  3)
+    ;;
+  4)
+    _dirs
+esac
+

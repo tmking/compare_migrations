@@ -1,0 +1,1 @@
+diff-remote $1 /data/$PWD:t/current/db/migrate $PWD/db/migrate

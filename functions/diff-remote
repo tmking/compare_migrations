@@ -1,0 +1,10 @@
+remote_server=$1
+remote_directory=$2
+local_directory=${3:-$PWD}
+
+if [[ ${#@} -le 2 ]]; then
+  echo "usage: $0 <remote server> <remote directory> <local directory>"
+  return 1
+fi
+
+diff <(ssh $remote_server ls -R $remote_directory) <(command ls -R $local_directory)
