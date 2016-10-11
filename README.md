@@ -36,4 +36,4 @@ This plugin provides two commands, `compare_migrations` and `diff-remote`.
 
 ## Notes
 
-`compare_migrations` will only work when you're in inside the source directory.
+`compare_migrations` will only work when you're inside of the source directory.
