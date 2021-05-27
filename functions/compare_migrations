@@ -1,1 +1,7 @@
-diff-remote $1 /data/$PWD:t/current/db/migrate $PWD/db/migrate
+case $1 in
+  *evo*)
+    diff-remote $1 Givecorps-site/db/migrate $PWD/db/migrate
+    ;;
+  *)
+    diff-remote $1 /data/$PWD:t/current/db/migrate $PWD/db/migrate
+esac
